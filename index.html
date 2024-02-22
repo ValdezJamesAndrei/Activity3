@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Login</title>
+   
+    <title>javascriptSample</title>
+    <style>
+        #DivContainer {
+            text-align:center;
+        }
+        .redext{
+            color: white;
+            background-color: black;
+            margin: 1rem;
+        }
+        div {
+            margin-bottom: 1rem;
+            font-size: large;
+        }
+        .redext:hover{
+            color: lightblue;
+        }
+        #btnlogin{
+            font-size: large;
+            color: aqua;
+        }
+        #btnlogin:hover{
+            cursor: pointer;
+            font-size: x-large;
+            color: antiquewhite;
+        }
+        
+        input {
+            text-align: right;
+            
+        }
+    
+    
+        
 
+    </style>
 </head>
-
+<title><Button></title>
 <body>
     <div style="text-align: center;">
-        <h1>Login</h1>
-        <input type="text" placeholder="Username" id="txtuser">
-        <input type="text" placeholder="Password" id="txtpass">
+        <marquee>
+            <h1>Login</h1>
+        </marquee>
+        <div><input type="text" placeholder="Username" id="txtuser" class="redText">
+        <div><input type="password" placeholder="password" id="txtpass" class="redText">
         <div style="margin-top: 1rem;">
-            <button id="btnlogin">Login</button>
-        </div>
+        <button id="btnlogin">Login</button>
+        
+
+
+
     </div>
+    
 </body>
 <script>
     console.log("Hello World");
 
     let buttonLogin = document.querySelector('#btnlogin');
-    buttonLogin.onclick = function () {
-        alert("Login Succesful!")
+    buttonLogin.oneclick = function(){
+        alert("Login Successful!")
     };
-</script> 
-
+</script>
 </html>
